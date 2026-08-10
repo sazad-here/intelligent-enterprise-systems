@@ -5,11 +5,13 @@ pages viewed, amount spent, day of week, browser. The business question is
 whether on-site behaviour predicts purchase value, and if so, which behaviour.
 
 ```bash
-python analysis.py
+python analysis.py          # the analysis — standard library only
+python make_chart.py        # regenerates the chart — needs matplotlib
 ```
 
-Standard library only. The regression is solved by Gauss-Jordan elimination on
-the normal equations, so there are no dependencies to install.
+The regression is solved by Gauss-Jordan elimination on the normal equations, so
+the analysis itself has nothing to install. Only chart generation needs a
+package, and the PNG is committed.
 
 ---
 
@@ -30,6 +32,13 @@ amount_spent = 7.50 + 9.30 × pages_viewed + 1.23 × time_on_site
 **Each additional page viewed is associated with $9.30 more spend.** An extra
 minute on site is worth $1.23 — and once pages are in the model, time adds
 almost nothing, because the two are themselves correlated (r = 0.60).
+
+![Scatter of pages viewed against amount spent for 50 sessions with a fitted line. Unadjusted slope 11.49 dollars per page; 9.30 dollars once time on site is controlled for.](charts/01-pages-vs-spend.png)
+
+The fitted line above is the **simple** regression, so its slope is $11.49 — the
+unadjusted effect. The $9.30 figure is the partial coefficient from the
+two-predictor model, which is smaller precisely because pages and time overlap.
+Both are on the chart so the pair never reads as a contradiction.
 
 This matters commercially because it changes the recommendation. "Keep visitors
 on the site longer" is the intuitive conclusion from a time-versus-spend

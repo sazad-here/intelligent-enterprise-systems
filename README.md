@@ -21,6 +21,8 @@ MS Management Information Systems, Lamar University.
 concentration risk — until you group on a different field and find one customer
 spread across 88 business partner records worth 13.2% of revenue.
 
+![Two panels ranking the same 708 SAP sales orders. Grouped by business partner ID no account exceeds 1.4% of revenue; grouped by customer name, Philly Bikes reaches 13.2% across 88 records.](01-order-to-cash-analytics/charts/01-concentration-inversion.png)
+
 ---
 
 ## Projects
@@ -46,11 +48,13 @@ SQL uses CTEs and window functions. Runs on the standard library alone.
 
 - **Pages viewed predicts spend; time on site mostly does not.** Adding time to a
   pages-only regression lifts R² by 3.4 points. Each additional page viewed is
-  worth **$9.30** in spend.
+  worth **$9.30** in spend once time on site is controlled for.
 - That flips the obvious recommendation: the lever is catalogue exposure, not
   dwell time.
 - **The two source workbooks disagree.** Documented the conflict, traced it to a
   paste error, showed the bounded impact, and stated which copy was used.
+
+![Scatter of pages viewed against amount spent for 50 web sessions, with a fitted line rising from about $30 at two pages to $130 at ten pages.](02-web-session-analysis/charts/01-pages-vs-spend.png)
 
 ### [3. SAP Process Documentation](03-process-documentation/) — process mapping
 
@@ -138,8 +142,19 @@ cd 02-web-session-analysis
 python analysis.py
 ```
 
-Python 3.9+. No dependencies — SQLite is loaded in memory and the regression is
-solved from first principles.
+Python 3.9+. **The analyses have no dependencies** — SQLite is loaded in memory
+and the regression is solved from first principles, so both scripts run on a
+bare interpreter.
+
+Regenerating the charts is the one thing that needs a package:
+
+```bash
+pip install matplotlib
+python 01-order-to-cash-analytics/scripts/make_charts.py
+python 02-web-session-analysis/make_chart.py
+```
+
+The PNGs are committed, so this is only needed if the data changes.
 
 Both cleaned datasets are committed, so the analyses run immediately after
 cloning. `01-order-to-cash-analytics/scripts/prepare_data.py` is included to show

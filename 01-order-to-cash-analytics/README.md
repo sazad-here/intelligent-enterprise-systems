@@ -13,6 +13,8 @@ The order book contains 708 orders worth €8.88M. Three things came out of it:
    no customer exceeds 1.4% of revenue. Grouped by customer name, "Philly Bikes"
    turns out to span **88 separate business partner records** worth **13.2% of
    revenue**. Same data, opposite conclusions, depending on one field choice.
+
+![Two panels ranking the same order book, sharing one scale. Grouped by business partner ID the top account is 124,000 euro; grouped by customer name Philly Bikes reaches 1.17 million.](charts/01-concentration-inversion.png)
 2. **€1.1M (12.4%) of the book is unfulfilled**, and stalled orders run 29% smaller
    than completed ones.
 3. **Seven orders have a requested delivery date before their order date**, four
@@ -32,8 +34,10 @@ anything confidential.
 
 ```
 data/sales_orders.csv        cleaned extract, 708 rows
+charts/                      generated figures (committed)
 scripts/prepare_data.py      raw .xlsx -> analysis-ready CSV
 scripts/run_analysis.py      loads SQLite, executes every query in sql/
+scripts/make_charts.py       regenerates charts/ from the same CSV
 sql/01_order_status_profile.sql        order book by fulfilment status
 sql/02_requested_lead_time.sql         lead-time distribution
 sql/03_revenue_concentration.sql       top accounts, running total (window fn)

@@ -38,6 +38,8 @@ reports use — the order book looks completely unconcentrated:
 Top 10 accounts = **9.9%** of revenue. No customer above 1.4%. On that basis you
 would tell the business it has no concentration risk at all.
 
+![Two panels ranking the same order book. Left, grouped by business partner ID: eight similar bars, none above 124,000 euro. Right, grouped by customer name: Philly Bikes at 1.17 million euro, roughly ten times the next account.](charts/01-concentration-inversion.png)
+
 Group on **customer name** instead and the picture inverts:
 
 | Customer name | Distinct BP IDs | Orders | Net value | % of revenue |
@@ -70,6 +72,8 @@ identical either way: [`sql/06_duplicate_customer_masters.sql`](sql/06_duplicate
 | Open | 97 | 13.7% | €942,990.50 | 10.6% | €9,721.55 |
 | In Process | 16 | 2.3% | €159,212.50 | 1.8% | €9,950.78 |
 | Not Relevant | 29 | 4.1% | €0.00 | 0.0% | €0.00 |
+
+![Horizontal bars of net value by order status. Completed 7.78 million euro, Open 943 thousand, In Process 159 thousand, Not Relevant zero.](charts/02-order-status.png)
 
 **€1,102,203.00 across 113 orders** sits in Open or In Process — 12.4% of the
 book not yet converted to revenue. Open orders also run **29% below** the
