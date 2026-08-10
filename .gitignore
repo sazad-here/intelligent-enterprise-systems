@@ -1,0 +1,35 @@
+# --------------------------------------------------------------------------
+# SAFETY RULES — do not relax these without reading evidence/README.md
+# --------------------------------------------------------------------------
+
+# Screenshots stay out until they have been redacted. Once an image has been
+# cropped and checked against the checklist in evidence/README.md, add an
+# explicit negation for that one file, e.g.:
+#     !evidence/01-project-cost-report.png
+evidence/*.png
+evidence/*.jpg
+evidence/*.jpeg
+evidence/*.PNG
+
+# Never commit coursework submissions, curriculum material, or peer reviews.
+*.docx
+*.doc
+*.pptx
+*.pdf
+*.xlsx
+*.xls
+
+# --------------------------------------------------------------------------
+# Standard
+# --------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.sqlite
+*.db
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
