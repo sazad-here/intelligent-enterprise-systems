@@ -34,10 +34,10 @@ received, financial records update without re-entry. The distinction that matter
 
 ```mermaid
 flowchart LR
-    A["1. Identify need<br/><small>Operations</small>"] --> B["2. Requisition<br/><small>Requesting dept</small>"]
-    B --> C["3. Purchase order<br/><small>Procurement</small>"]
-    C --> D["4. Receive goods<br/><small>Warehouse</small>"]
-    D --> E["5. Invoice + payment<br/><small>Accounts payable</small>"]
+    A["1. Identify need<br/>Operations"] --> B["2. Requisition<br/>Requesting dept"]
+    B --> C["3. Purchase order<br/>Procurement"]
+    C --> D["4. Receive goods<br/>Warehouse"]
+    D --> E["5. Invoice and payment<br/>Accounts payable"]
 ```
 
 One approved purchase order simultaneously updates the inventory forecast,

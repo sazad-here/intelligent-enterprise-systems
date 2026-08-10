@@ -1,0 +1,9 @@
+# Normalise line endings so the repo is consistent regardless of who clones it.
+* text=auto eol=lf
+
+# Data files are text but should never be munged by diff heuristics.
+*.csv text eol=lf
+
+# Keep binary assets binary once redacted screenshots are added.
+*.png binary
+*.jpg binary

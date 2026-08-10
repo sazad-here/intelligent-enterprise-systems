@@ -176,8 +176,8 @@ further ahead.
 ## Reproducing this
 
 ```bash
-python scripts/prepare_data.py "Sales Orders.xlsx" data/sales_orders.csv
 python scripts/run_analysis.py
 ```
 
-Every number above comes out of `run_analysis.py`. Nothing is hand-entered.
+Every number above comes out of `run_analysis.py`, run against the committed
+`data/sales_orders.csv`. Nothing is hand-entered.

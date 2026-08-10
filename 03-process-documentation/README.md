@@ -26,7 +26,7 @@ creates an obligation in another, and where that goes wrong.
 
 ```mermaid
 flowchart TB
-    subgraph SD["Sales &amp; Distribution"]
+    subgraph SD["Sales and Distribution"]
         SO["Sales Order"] --> DEL["Outbound Delivery"] --> GI["Goods Issue"] --> INV["Customer Invoice"]
     end
     subgraph MM["Materials Management"]

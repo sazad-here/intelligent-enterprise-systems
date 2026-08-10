@@ -103,9 +103,8 @@ classmates are deliberately excluded from this repository. See
 ## Running the code
 
 ```bash
-# Order-to-cash analysis
+# Order-to-cash analysis — reproduces every number in findings.md
 cd 01-order-to-cash-analytics
-python scripts/prepare_data.py "Sales Orders.xlsx" data/sales_orders.csv
 python scripts/run_analysis.py
 
 # Web session analysis
@@ -113,4 +112,10 @@ cd 02-web-session-analysis
 python analysis.py
 ```
 
-Python 3.9+. No dependencies.
+Python 3.9+. No dependencies — SQLite is loaded in memory and the regression is
+solved from first principles.
+
+Both cleaned datasets are committed, so the analyses run immediately after
+cloning. `01-order-to-cash-analytics/scripts/prepare_data.py` is included to show
+the extraction and cleaning logic, but the raw SAP export it consumes is not
+redistributed here.

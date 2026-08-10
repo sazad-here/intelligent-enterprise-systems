@@ -58,13 +58,22 @@ A derived `requested_lead_days` column was added at this stage.
 
 ## Running it
 
+The cleaned extract is committed, so this runs immediately after cloning:
+
 ```bash
-python scripts/prepare_data.py "Sales Orders.xlsx" data/sales_orders.csv
 python scripts/run_analysis.py
 ```
 
-Standard library only — no dependencies. SQLite is loaded in memory, so nothing
-is written except the CSV.
+Standard library only — no dependencies. SQLite is loaded in memory and nothing
+is written to disk.
+
+`scripts/prepare_data.py` is included to document the extraction and cleaning
+logic, but the raw SAP export it consumes is not redistributed in this
+repository. To re-run that stage against your own Fiori export:
+
+```bash
+python scripts/prepare_data.py "your-export.xlsx" data/sales_orders.csv
+```
 
 ## Tools
 

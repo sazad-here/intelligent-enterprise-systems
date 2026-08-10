@@ -70,6 +70,10 @@ comparing artefacts of a configuration decision.
 
 ## The two systems in one sentence
 
-FI says *the company spent €90,000 on catering*. CO says *€30,000 of that is
-sitting inside the cost of the bikes you sold*. Both are true; they answer
-different questions, and confusing them produces confident, wrong analysis.
+FI says *the company spent €90,000 on catering*. CO says *that €90,000 was
+assessed onto the assembly cost centre, and now sits inside the €45/hour rate
+that every bike absorbs* — assembly's total planned debit of €270,000 divided by
+6,000 planned hours.
+
+Both are true. They answer different questions, and confusing them produces
+confident, wrong analysis.
