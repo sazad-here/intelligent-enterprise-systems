@@ -69,6 +69,22 @@ forecasting, MRP, pricing, and replenishment against other teams in real time.
 
 ---
 
+---
+
+## The system behind the analysis
+
+![SAP S/4HANA project cost report showing actual, commitment, total and plan columns by cost element](evidence/01-project-cost-report.png)
+
+*Project cost report in SAP S/4HANA. The **Commitment** column — €5,000 ordered
+but not yet invoiced — is the one most often dropped from budget reporting, and
+the reason a project showing €24,700 actual against a €49,433 plan is carrying
+€29,700 of real exposure.*
+
+Five more screenshots, and a note on how they were redacted, in
+[evidence/](evidence/).
+
+---
+
 ## Skills demonstrated
 
 | | |

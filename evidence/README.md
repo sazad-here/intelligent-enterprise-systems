@@ -1,71 +1,64 @@
 # Evidence — SAP System Screenshots
 
-Screenshots showing hands-on work in SAP S/4HANA 2022 (Fiori 3.0).
+Six screenshots from hands-on work in SAP S/4HANA 2022 (Fiori 3.0), Global Bike
+training client.
 
-> **Nothing is committed to this folder until it has been redacted.**
-> `.gitignore` blocks image files here by default. Remove that rule only after
-> working through the checklist below.
-
----
-
-## Redaction checklist — apply to every image before committing
-
-The original screenshots are full-screen captures taken to satisfy a coursework
-requirement (they had to show browser tabs and the taskbar to prove authorship).
-That makes them unsuitable for publication as-is. Every one of the following
-must be removed:
-
-| # | What to remove | Why |
-|---|---|---|
-| 1 | **Personal email address and account name** in the browser profile and Outlook tab | Personal contact details |
-| 2 | **The Outlook / Mail tab** entirely | Shows a private inbox |
-| 3 | **WhatsApp and GroupMe tabs** | Private messaging; one tab title contains another student's full name |
-| 4 | **All other browser tab titles and bookmarks** | Unrelated personal browsing |
-| 5 | **The SAP server hostname and port in the URL bar** | Hosting institution's internal infrastructure; do not publish |
-| 6 | **The Blackboard / "View Assessment" tab** | Identifies the graded assessment |
-| 7 | **The Windows taskbar** | Weather widget, notification counts, open applications |
-| 8 | **The user initials avatar** in the SAP shell header | Identifies the account |
-
-**What to keep:** the SAP application area itself — the report, the transaction
-screen, the data. That is the only part with any evidentiary value.
-
-**Easiest method:** crop to the SAP content area only. That removes items 1–4 and
-6–7 in a single action. Then blur or block out the URL bar (5) and the avatar (8)
-if they fall inside the crop.
+| Screenshot | Shows |
+|---|---|
+| [01-project-cost-report.png](01-project-cost-report.png) | Project P/2672 cost report by cost element — Actual / Commitment / Total / Plan. The commitment column is the one discussed in [project accounting](../03-process-documentation/project-accounting.md) |
+| [02-cost-center-planning.png](02-cost-center-planning.png) | Cost centre planning report: cafeteria assessment, maintenance activity allocation, and under/over-absorbed overhead netting to zero |
+| [03-project-network-graph.png](03-project-network-graph.png) | Network activity graph with earliest/latest dates and float — activity 0010 at zero float sits on the critical path, 0020 carries five days |
+| [04-project-builder-wbs.png](04-project-builder-wbs.png) | WBS hierarchy and network activity structure in Project Builder |
+| [05-secondary-cost-element.png](05-secondary-cost-element.png) | G/L account master for a secondary cost element used in activity allocation |
+| [06-network-confirmation.png](06-network-confirmation.png) | Activity confirmation: planned 80 hours against actual and forecast duration of 265 |
 
 ---
 
-## Recommended set — six screenshots
+## How these were redacted
 
-Chosen because each shows substantive analytical work rather than a data-entry
-screen. Source files are in the coursework folder, not in this repository.
+The originals were full-screen captures taken to satisfy a coursework
+requirement that browser tabs and the taskbar be visible to prove authorship.
+That made them unsuitable for publication.
 
-| Target filename | Source | Shows |
-|---|---|---|
-| `01-project-cost-report.png` | `14.PNG` | Project P/2672 Act/Commitment/Total/Plan cost report by cost element — the actual-vs-commitment distinction described in [project accounting](../03-process-documentation/project-accounting.md) |
-| `02-cost-center-planning.png` | `Exam 1/14C.PNG` | Cost centre planning report showing assessment, activity allocation, and under/over-absorbed overhead |
-| `03-project-network-graph.png` | `Ans 3.PNG` | Network activity graph with early/late dates and float — the critical path |
-| `04-project-builder-wbs.png` | `Ans1.PNG` | WBS hierarchy and network activity structure |
-| `05-secondary-cost-element.png` | `Exam 1/3(3).PNG` | G/L account master for a secondary cost element |
-| `06-network-confirmation.png` | `QUERY.PNG` | Activity confirmation with planned vs actual vs forecast duration |
+Each was cropped to the SAP application area, which removed:
 
-Six is deliberate. A recruiter will open one or two; a folder of forty signals
-inability to prioritise.
+- the browser tab bar (private mail and messaging tabs)
+- the address bar (the hosting institution's internal server hostname)
+- the bookmarks bar (unrelated personal browsing)
+- the Windows taskbar
+- the open account menu and profile avatar
+
+The SAP shell header and the application content are kept, since that is the
+only part with evidentiary value.
+
+**One identifier is deliberately retained.** The training account `LEARN-672`
+remains visible in the report footer of screenshot 01 and the "Created by" field
+of screenshot 05. It is a course-issued account on a shared teaching sandbox —
+not a credential, and not personal contact information — and leaving it in place
+is what shows the work was genuinely executed rather than copied. Everything
+that identified a person, a device, or an institution's infrastructure is gone.
 
 ---
 
 ## What is deliberately not published
 
-The completed case-study answer templates are excluded from this repository.
-They are graded submissions for a course that is still running, and publishing
-worked solutions would be an academic integrity problem regardless of who
-benefits.
+Completed case-study answer templates are excluded. They are graded submissions
+for a course that is still running, and publishing worked solutions would be an
+academic integrity problem regardless of who benefits.
 
-The SAP UCC Magdeburg curriculum PDF is excluded because it is copyrighted
-teaching material and not mine to redistribute.
+The SAP UCC Magdeburg curriculum PDF is excluded — it is copyrighted teaching
+material and not mine to redistribute.
 
-Peer evaluations of named teammates are excluded because they are other people's
-performance data.
+Peer evaluations of named teammates are excluded, because they are other
+people's performance data.
 
 The analysis, process documentation, and findings in this repository are my own
 work and are published deliberately.
+
+---
+
+## Adding more screenshots later
+
+`.gitignore` blocks images in this folder by default and un-ignores these six
+explicitly. Any new image must be added to that allowlist by name, which forces
+a deliberate decision — and a redaction pass — for each one.
