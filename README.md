@@ -1,4 +1,4 @@
-# Enterprise Systems & Business Analytics Portfolio
+# Intelligent Enterprise Systems 
 
 Analytical work built on hands-on execution of five core business process cycles
 in **SAP S/4HANA 2022**, plus the data analysis and process documentation that
