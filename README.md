@@ -1,10 +1,16 @@
-# Intelligent Enterprise Systems 
+# Intelligent Enterprise Systems
 
 Analytical work built on hands-on execution of five core business process cycles
 in **SAP S/4HANA 2022**, plus the data analysis and process documentation that
 came out of it.
 
 MS Management Information Systems, Lamar University.
+
+> **For students:** this repository contains analysis, process documentation and
+> findings — not answers. Completed case-study submissions are deliberately
+> excluded, along with the copyrighted SAP UCC curriculum. What is here is
+> intended to explain how the cycles fit together and how to interrogate the
+> data they produce, which is the part that stays useful after the module ends.
 
 ---
 
@@ -66,8 +72,6 @@ would not present to a decision-maker without caveats.
 Live competitive simulation inside a real SAP system. **Finished 1st** with
 **€1.56M company valuation** and **€39,037 cumulative net income**, running
 forecasting, MRP, pricing, and replenishment against other teams in real time.
-
----
 
 ---
 
