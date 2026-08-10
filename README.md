@@ -98,6 +98,12 @@ Course submissions, copyrighted curriculum material, and peer evaluations of
 classmates are deliberately excluded from this repository. See
 [evidence/README.md](evidence/README.md).
 
+## Licence
+
+Code and documentation are MIT licensed — see [LICENSE](LICENSE). The datasets
+are synthetic teaching data as described above and contain no real customer or
+company information.
+
 ---
 
 ## Running the code
