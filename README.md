@@ -1,8 +1,8 @@
 # Intelligent Enterprise Systems
 
-Analytical work built on hands-on execution of five core business process cycles
-in **SAP S/4HANA 2022**, plus the data analysis and process documentation that
-came out of it.
+Analytical work built on hands-on execution of core business process cycles in
+**SAP S/4HANA 2022**, plus the data analysis and process documentation that came
+out of it.
 
 MS Management Information Systems, Lamar University.
 
@@ -95,7 +95,7 @@ Five more screenshots, and a note on how they were redacted, in
 |---|---|
 | **SQL** | CTEs, window functions, running totals, aggregation, data quality checks |
 | **Python** | Data preparation, OLS regression from first principles, SQLite |
-| **SAP S/4HANA** | SD, MM, PP, FI, CO, PS — executed end to end, Fiori 3.0 |
+| **SAP S/4HANA** | MM, PP, FI, CO and PS executed end to end; SD through inquiry and pricing. Fiori 3.0 |
 | **Analysis** | Descriptive statistics, correlation, multiple regression, concentration analysis |
 | **Data quality** | Duplicate master detection, referential checks, source reconciliation |
 | **Process** | Cross-functional mapping, document flow, internal controls |

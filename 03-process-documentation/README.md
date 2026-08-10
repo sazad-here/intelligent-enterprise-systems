@@ -1,12 +1,20 @@
 # SAP S/4HANA Process Documentation
 
-Process maps for five enterprise cycles I executed end to end in SAP S/4HANA
-2022 (Fiori 3.0) against a single shared dataset, so the document flows below
-connect to each other rather than standing alone.
+Process maps for five enterprise cycles worked in SAP S/4HANA 2022 (Fiori 3.0)
+against a single shared dataset, so the document flows below connect to each
+other rather than standing alone.
 
-These are written from my own execution notes. They contain no material from the
-SAP UCC curriculum, and the document numbers referenced are ones my own
-transactions generated.
+**Scope, stated plainly:** Procure-to-Pay, Plan-to-Produce, Record-to-Report and
+project accounting were executed end to end — master data through to settlement
+or clearing. **Order-to-Cash I ran through master data, availability check and
+inquiry**; the delivery, billing and payment steps in that map are documented
+from the case study rather than from transactions I posted myself. The
+order-book analysis in [project 01](../01-order-to-cash-analytics/) is separate
+work, done on a 708-order extract.
+
+These are written from my own notes. They contain no material from the SAP UCC
+curriculum, and the document numbers referenced are ones my own transactions
+generated.
 
 | Cycle | Module | Documented in |
 |---|---|---|

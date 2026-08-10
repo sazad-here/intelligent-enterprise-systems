@@ -3,6 +3,14 @@
 The revenue cycle: from a customer asking what something costs, to cash cleared
 against the receivable.
 
+> **Scope note.** I ran steps 1–4 of this cycle in S/4HANA — business partner and
+> contact person creation, availability check, and inquiry. Steps 5–10 are
+> documented from the case study, not from transactions I posted. The pricing
+> section below reflects what I observed in the system; the delivery and billing
+> sections are learned rather than executed. Everything in
+> [project 01](../01-order-to-cash-analytics/) is separate work on a real
+> 708-order extract.
+
 ```mermaid
 flowchart TD
     BP["Create Business Partner<br/>(sold-to party)"] --> INQ["Inquiry"]
