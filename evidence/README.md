@@ -21,7 +21,7 @@ must be removed:
 | 2 | **The Outlook / Mail tab** entirely | Shows a private inbox |
 | 3 | **WhatsApp and GroupMe tabs** | Private messaging; one tab title contains another student's full name |
 | 4 | **All other browser tab titles and bookmarks** | Unrelated personal browsing |
-| 5 | **The SAP server hostname in the URL bar** (`riga.cob.csuchico.edu:8001`) | Institution's internal infrastructure; do not publish |
+| 5 | **The SAP server hostname and port in the URL bar** | Hosting institution's internal infrastructure; do not publish |
 | 6 | **The Blackboard / "View Assessment" tab** | Identifies the graded assessment |
 | 7 | **The Windows taskbar** | Weather widget, notification counts, open applications |
 | 8 | **The user initials avatar** in the SAP shell header | Identifies the account |
